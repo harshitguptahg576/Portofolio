@@ -1,0 +1,22 @@
+@mixin bg_txt($bg, $txt) {
+  background-color: $bg;
+  color: $txt;
+}
+@mixin w_h($wide, $high) {
+  width: $wide;
+  height: $high;
+}
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@mixin f-size($s, $w) {
+  font-size: $s;
+  font-weight: $w;
+}
+@mixin border($b, $rad) {
+  border: $b;
+  border-radius: $rad;
+}

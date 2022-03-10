@@ -1,0 +1,88 @@
+@import "./SASS/mixins";
+@import "./SASS/variables";
+
+* {
+  // padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 64.5%;
+  body {
+    margin: 0%;
+    font-family: $font-cormorant;
+    font-size: $m-size;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.navbar {
+  display: block !important;
+  padding: 5rem 1rem 2rem 1rem !important;
+  text-align: center;
+  width: 100%;
+  padding: 4rem 1rem 1rem 1rem;
+  @include bg_txt(black, white);
+  .logo {
+    font-family: $font-trocchi;
+    @include f-size($lg-size, 500);
+  }
+  button {
+    background-color: transparent;
+    border-radius: 50px;
+    width: 5rem;
+  }
+  .menubar {
+    margin: 1rem;
+    height: 80vh;
+    ul {
+      height: 100%;
+      margin-bottom: 0px;
+      display: grid;
+      li {
+        list-style: none;
+        margin: auto;
+        a {
+          @include f-size($m-size, 600);
+          margin: 0rem 3rem;
+          @include bg_txt(transparent, white);
+          border: none;
+        }
+        .active {
+          color: $secondary-color;
+          border-bottom: 0.2rem solid;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  // position: fixed;
+  bottom: 0;
+  width: 100%;
+  @include bg_txt(black, white);
+  font-size: 2rem;
+}
+
+// Desktop View
+@media screen and (min-width: 850px) {
+  .navbar {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .menubar {
+    height: auto !important;
+    display: block !important;
+    ul {
+      display: flex !important;
+    }
+  }
+  .menu-btn {
+    display: none;
+  }
+}
