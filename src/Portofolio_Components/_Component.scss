@@ -83,6 +83,8 @@
   display: grid;
   gap: 0.75rem;
   grid-template-columns: repeat(8, 1fr);
+  // padding: 1rem;
+  // box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.05);
   .grid__item {
     border-radius: 0.75rem;
     background-position: center;
