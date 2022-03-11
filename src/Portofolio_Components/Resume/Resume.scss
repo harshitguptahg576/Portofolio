@@ -1,0 +1,53 @@
+// Variables.
+$body-bg: #272635;
+$link-bg: #11111A;
+$link-color: rgba(255, 255, 255, .6);
+$active-link-color: $body-bg;
+$white: #fff;
+$text-color: #2C2C2C;
+
+
+
+// Tab styling.
+.tabs {
+	max-width: 60rem;
+	display: flex;
+	
+	> ul {
+		list-style-type: none;
+		padding: 0;
+
+		li {
+			display: block;
+			text-align: center;
+			
+			a {
+				display: block;
+				text-decoration: none;
+				background: $link-bg;
+				padding: 1rem 1.5rem;
+				color: $link-color;
+				transition: all 1s ease;
+				
+				&.active {
+					background: $white;
+					color: $text-color;
+				}
+				
+				&:hover:not(.active) {
+					color: $white;
+				}
+			}
+		}
+	}
+	
+	section {
+		background: $white;
+		padding: 1.5rem 2.5rem;
+		display: none;
+		
+		&.active {
+			display: block;
+		}
+	}
+}

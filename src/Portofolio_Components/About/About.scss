@@ -1,3 +1,60 @@
 @import "../../SASS/mixins";
 @import "../../SASS/variables";
 
+.about-box {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  gap: 2em;
+  // padding: 2rem 3rem;
+  .hire-btn,
+  .resume-btn {
+    color: black;
+  }
+}
+
+.bio {
+  width: 50%;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  justify-content: space-around;
+  .bio-short {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: $secondary-color;
+  }
+  .bio-title {
+    @include f-size($lg-size,600);
+  }
+  .bio-desc {
+    @include f-size($m-size,500)
+  }
+  .highlights{
+      .h-title{
+        @include f-size(2rem,600)
+      }
+      ul ::marker{
+          content: "🔸";
+        //   content: "🔖";
+          color: #ff8400;
+      }
+      li{
+          padding-left: 1rem;
+      }
+      span{
+          color: $secondary-color;
+          @include f-size(unset,700);
+      }
+  }
+}
+
+@media (max-width: 850px) {
+  .about-box {
+    flex-direction: column-reverse;
+  }
+
+  .bio {
+    width: 100%;
+  }
+}

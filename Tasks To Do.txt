@@ -1,0 +1,25 @@
+Build a responsive React App...
+
+Style ▶️ by using SCSS
+
+▶️ Header Component 🔽
+🔸Responsive navbar
+
+▶️ Home Component 🔽 
+🔸Hero section 
+🔸Curve SVG
+
+▶️ About 🔽
+🔸Photo Gallery
+🔸Bio
+
+▶️ Resume 🔽
+🔸Tab bar
+🔸Section Component
+🔸Animations
+🔸Education Detail ▶️ MCA, BSC, 12, 10
+🔸Work History ▶️ Vinove
+🔸Skills ▶️ Visualization of skills by pie charts
+🔸Projects ▶️ overview and button link to Project page
+🔸Interests ▶️ ...
+
