@@ -19,12 +19,12 @@ ReactDOM.render(
   <BrowserRouter>
     <Header />
     <Routes>
-      <Route path="/Portofolio" element={<Portofolio />} />
-      <Route path="/Portofolio/about" element={<About />} />
-      <Route path="/Portofolio/contact" element={<Contact />} />
-      <Route path="/Portofolio/projects" element={<Projects />} />
-      <Route path="/Portofolio/resume" element={<Resume />} />
-      <Route path="*" element={<Portofolio />} />
+      <Route path="" element={<Portofolio />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/resume" element={<Resume />} />
+      <Route path="*" element={<Home />} />
     </Routes>
     <Footer />
   </BrowserRouter>,

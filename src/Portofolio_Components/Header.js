@@ -8,7 +8,7 @@ const Header = () => {
       <nav>
         <div className="navbar">
           <div className="navbarcollapse d-flex justify-content-around">
-            <NavLink to="/Portofolio">
+            <NavLink to="">
               <div className="logo d-flex align-items-center">
                 <img
                   src="Assets/Images/H Logo.png"
@@ -36,19 +36,19 @@ const Header = () => {
           <div className="menubar" style={showStyle}>
             <ul>
               <li className="menu">
-                <NavLink to="/Portofolio">Home</NavLink>
+                <NavLink to="">Home</NavLink>
               </li>
               <li className="menu">
-                <NavLink to="/Portofolio/about">AboutMe</NavLink>
+                <NavLink to="/about">AboutMe</NavLink>
               </li>
               <li className="menu">
-                <NavLink to="/Portofolio/resume">Resume</NavLink>
+                <NavLink to="/resume">Resume</NavLink>
               </li>
               <li className="menu">
-                <NavLink to="/Portofolio/projects">Projects</NavLink>
+                <NavLink to="/projects">Projects</NavLink>
               </li>
               <li className="menu">
-                <NavLink to="/Portofolio/contact">ContactMe</NavLink>
+                <NavLink to="/contact">ContactMe</NavLink>
               </li>
             </ul>
           </div>
