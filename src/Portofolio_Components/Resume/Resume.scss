@@ -1,53 +1,61 @@
-// Variables.
-$body-bg: #272635;
-$link-bg: #11111A;
-$link-color: rgba(255, 255, 255, .6);
-$active-link-color: $body-bg;
-$white: #fff;
-$text-color: #2C2C2C;
-
-
+@import "../../SASS/mixins";
+@import "../../SASS/variables";
 
 // Tab styling.
-.tabs {
-	max-width: 60rem;
-	display: flex;
-	
-	> ul {
-		list-style-type: none;
-		padding: 0;
+.resume {
+  width: 100%;
+  #tabs {
+    margin: auto;
+    list-style-type: none;
+    li {
+      a {
+        display: flex;
+        text-decoration: none;
+        text-align: center;
+        span {
+          @include bg_txt(black, white);
+          font-size: 2rem;
+          padding: 1.5rem 1rem;
+        }
+        p {
+          width: 100%;
+          margin: 1rem 0px;
+          padding: 0.5rem !important;
+          @include bg_txt(white, black);
+          border-radius: 0px 100px 100px 0px;
+          transition: all 1s ease;
+          &.active {
+            @include bg_txt(black, white);
+          }
+        }
+        // &:hover:not(.active) {
+        //   color: white;
+        // }
+      }
+    }
+  }
+  .section {
+    background: white;
+    padding: 1.5rem 2.5rem;
+    //   display: none;
 
-		li {
-			display: block;
-			text-align: center;
-			
-			a {
-				display: block;
-				text-decoration: none;
-				background: $link-bg;
-				padding: 1rem 1.5rem;
-				color: $link-color;
-				transition: all 1s ease;
-				
-				&.active {
-					background: $white;
-					color: $text-color;
-				}
-				
-				&:hover:not(.active) {
-					color: $white;
-				}
-			}
-		}
-	}
-	
-	section {
-		background: $white;
-		padding: 1.5rem 2.5rem;
-		display: none;
-		
-		&.active {
-			display: block;
-		}
-	}
+    &.active {
+      display: block;
+    }
+  }
+}
+
+
+// Mobile View
+
+@media screen and (min-width:850px) {
+  .resume{
+    display: flex;
+  }
+  #tabs{
+    width: 30%;
+  }
+  .section {
+    width: 70%;
+  }
 }

@@ -2,40 +2,40 @@
 @import "../SASS/variables";
 
 // Title:
-.title h1 {
-  @include f-size(4rem, 900);
-  text-align: center;
-}
-.title p {
-  @include f-size($sm-size, 700);
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 5px;
-}
-.title p:before {
-  width: 28px;
-  height: 5px;
-  display: block;
-  content: "";
-  position: absolute;
-  bottom: 3.5px;
-  left: 50%;
-  margin-left: -14px;
-  z-index: 1;
-  background-color: $secondary-color;
-}
-.title p:after {
-  width: 100px;
-  height: 1px;
-  display: block;
-  content: "";
-  position: relative;
-  margin-top: 1rem;
-  left: 50%;
-  margin-left: -50px;
-  background-color: black;
-}
+// .title h1 {
+//   @include f-size(4rem, 900);
+//   text-align: center;
+// }
+// .title p {
+//   @include f-size($sm-size, 700);
+//   position: relative;
+//   text-align: center;
+//   text-transform: uppercase;
+//   padding-bottom: 5px;
+// }
+// .title p:before {
+//   width: 28px;
+//   height: 5px;
+//   display: block;
+//   content: "";
+//   position: absolute;
+//   bottom: 3.5px;
+//   left: 50%;
+//   margin-left: -14px;
+//   z-index: 1;
+//   background-color: $secondary-color;
+// }
+// .title p:after {
+//   width: 100px;
+//   height: 1px;
+//   display: block;
+//   content: "";
+//   position: relative;
+//   margin-top: 1rem;
+//   left: 50%;
+//   margin-left: -50px;
+//   background-color: black;
+// }
 
 
 
@@ -150,6 +150,67 @@
   opacity: 0.75;
   border-radius: 100px 0 0 0 !important;
  }
+
+
+// Tabs Component:
+.education{
+  margin: auto;
+  width: 80%;
+  .edu-title{
+    @include f-size(2.5rem,600);
+  }
+  ul ::marker{
+      content: "👨‍🎓";
+      color: #ff8400;
+  }
+  li{
+    
+      padding: 1rem 2rem 0rem 2rem;
+  }
+  .course{
+    @include f-size(1.8rem,600);
+  }
+  .date-per{
+    @include f-size(1.5rem,600);
+    display: flex;
+    justify-content: space-between;
+    .percent{
+      padding: 0px 1rem;
+      color: $secondary-color;
+    }
+  }
+}
+
+
+// Progress Bar
+.progress{
+  position: relative;
+  margin: 4px;
+  float:left;
+  text-align: center;
+}
+.barOverflow{ /* Wraps the rotating .bar */
+  position: relative;
+  overflow: hidden; /* Comment this line to understand the trick */
+  width: 90px; height: 45px; /* Half circle (overflow) */
+  margin-bottom: -14px; /* bring the numbers up */
+}
+.bar{
+  position: absolute;
+  top: 0; left: 0;
+  width: 90px; height: 90px; /* full circle! */
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid #eee;     /* half gray, */
+  border-bottom-color: #0bf;  /* half azure */
+  border-right-color: #0bf;
+}
+
+
+
+
+
+
 
 
 @media (max-width: 850px) {

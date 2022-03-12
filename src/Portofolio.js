@@ -11,6 +11,8 @@ const Portofolio = () => {
     <>
       <Home />
       <About />
+      <div style={{height:"20px"}} />
+      <Resume />
     </>
   );
 };
