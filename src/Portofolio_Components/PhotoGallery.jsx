@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const PhotoGallery = () => {
+
+  const Gallery=useRef(null);
+  useEffect(() => {
+    let galleryImg=Gallery.current.children;
+    let flipImg;
+  const animateGallery=setInterval(()=>{
+    flipImg=galleryImg[Math.floor(Math.random()*galleryImg.length)];
+    flipImg.classList.add("flip")
+    setTimeout(()=>{
+      flipImg.classList.remove("flip")
+    },1000)
+  },3000);
+  
+
+  })
+  
+  
   return (
-      <div className="grid__container">
+      <div className="grid__container" ref={Gallery}>
         <div className="grid__item one"></div>
         <div className="grid__item two"></div>
         <div className="grid__item three"></div>

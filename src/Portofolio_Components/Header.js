@@ -15,7 +15,7 @@ const Header = () => {
                   width={"50"}
                   alt="H-Coder"
                 />
-                <span className="logo-text text-white px-3 fs-2">
+                <span className="logo-text px-3 fs-2">
                   Portofolio
                 </span>
               </div>

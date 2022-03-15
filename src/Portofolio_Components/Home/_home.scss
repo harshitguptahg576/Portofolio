@@ -17,6 +17,9 @@
     a {
       padding: 0.8rem;
       color: white;
+      &:hover{
+        color: $secondary-color;
+      }
     }
   }
   .skills {

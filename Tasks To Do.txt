@@ -23,3 +23,4 @@ Style ▶️ by using SCSS
 🔸Projects ▶️ overview and button link to Project page
 🔸Interests ▶️ ...
 
+▶️ Intersection Observer: 🔸Animations for scroll into view

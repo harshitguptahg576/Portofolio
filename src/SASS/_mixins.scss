@@ -20,3 +20,32 @@
   border: $b;
   border-radius: $rad;
 }
+
+@mixin animate($animation,$duration,$method,$times){
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes_fade{
+  @keyframes fade{
+    0%{
+      opacity: 1;
+      }
+     50%{
+      opacity: 0.5;
+      }
+     100%{
+      opacity: 0;
+     }
+  }
+}
+
+@mixin keyframes_moveRight{
+  @keyframes moveRight{
+    0%{
+      width: 25%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+}

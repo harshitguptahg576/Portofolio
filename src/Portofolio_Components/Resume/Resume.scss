@@ -12,20 +12,23 @@
         display: flex;
         text-decoration: none;
         text-align: center;
-        span {
+        span { 
           @include bg_txt(black, white);
-          font-size: 2rem;
+          @include f-size(2rem,600);
           padding: 1.5rem 1rem;
         }
         p {
           width: 100%;
+          @include f-size(1.75rem,600);
           margin: 1rem 0px;
           padding: 0.5rem !important;
           @include bg_txt(white, black);
           border-radius: 0px 100px 100px 0px;
-          transition: all 1s ease;
           &.active {
-            @include bg_txt(black, white);
+            @include bg_txt(black, $secondary-color);
+            transition: all 1s ease-in;
+            @include keyframes_moveRight();
+            @include animate(moveRight,1s,linear,1)
           }
         }
         // &:hover:not(.active) {
@@ -45,14 +48,67 @@
   }
 }
 
+// Tabs Component:
+.tab {
+  margin: auto;
+  width: 80%;
+  .tab-title {
+    @include f-size(2.5rem, 600);
+  }
+  li {
+    padding: 1rem 2rem 0rem 2rem;
+  }
+  .course {
+    color: $secondary-color;
+    @include f-size(1.8rem, 600);
+  }
+  .date-per {
+    @include f-size(1.5rem, 600);
+    display: flex;
+    justify-content: space-between;
+    .percent {
+      padding: 0px 1rem;
+      color: $secondary-color;
+    }
+  }
+}
+
+#tab-1 {
+  ul ::marker {
+    content: "👨‍🎓";
+  }
+}
+#tab-2 {
+    ul ::marker {
+      content: "💼";
+    }
+}
+// Skills Tab
+
+#tab-3 {
+  .tab{
+  width: auto;
+  ul{
+    padding: 1rem 0px ;
+    display:grid;
+    grid-template-columns: 33.3%  33.3%  33.3%;
+    li{
+      padding: 0px;
+      margin: auto;
+      list-style: none;
+    }
+  }
+  }
+
+}
 
 // Mobile View
 
-@media screen and (min-width:850px) {
-  .resume{
+@media screen and (min-width: 850px) {
+  .resume {
     display: flex;
   }
-  #tabs{
+  #tabs {
     width: 30%;
   }
   .section {
