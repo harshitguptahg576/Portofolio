@@ -13,6 +13,8 @@ const Portofolio = () => {
       <About />
       <div style={{height:"20px"}} />
       <Resume />
+      <div style={{height:"20px"}} />
+      <Projects />
     </>
   );
 };

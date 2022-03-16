@@ -21,7 +21,7 @@
   border-radius: $rad;
 }
 
-@mixin animate($animation,$duration,$method,$times){
+@mixin animate($animation,$duration,$method, $times){
   animation: $animation $duration $method $times;
 }
 
@@ -46,6 +46,34 @@
     }
     100%{
       width: 100%;
+    }
+  }
+}
+
+@mixin keyframes_spin{
+  @keyframes spin{
+    0%{
+      transform: rotate(-45deg);
+    }
+    50%{
+      transform: rotate(135deg);
+    }
+    100%{
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@mixin keyframes_zoomInOut{
+  @keyframes zoomInOut{
+    0%{
+      font-size: small;
+    }
+    50%{
+      font-size: 1.5rem;
+    }
+    100%{
+      font-size: small;
     }
   }
 }

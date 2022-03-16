@@ -184,13 +184,16 @@
   border-bottom-color: $secondary-color;
   border-left-color: $secondary-color;
   transform: rotate(-45deg);
+  @include animate(spin, 3s, ease-out, 1);
+  @include keyframes_spin();
+  // animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 .skill-per {
   @include f-size(1.5rem, 600);
 }
 .skill-name {
   color: $secondary-color;
-  @include f-size(1.8rem, 600);
+  @include f-size(1.75rem, 700);
 }
 
 @media (max-width: 850px) {

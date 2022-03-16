@@ -12,14 +12,14 @@
         display: flex;
         text-decoration: none;
         text-align: center;
-        span { 
+        span {
           @include bg_txt(black, white);
-          @include f-size(2rem,600);
+          @include f-size(2rem, 600);
           padding: 1.5rem 1rem;
         }
         p {
           width: 100%;
-          @include f-size(1.75rem,600);
+          @include f-size(1.75rem, 600);
           margin: 1rem 0px;
           padding: 0.5rem !important;
           @include bg_txt(white, black);
@@ -28,7 +28,7 @@
             @include bg_txt(black, $secondary-color);
             transition: all 1s ease-in;
             @include keyframes_moveRight();
-            @include animate(moveRight,1s,linear,1)
+            @include animate(moveRight, 1s, linear, 1);
           }
         }
         // &:hover:not(.active) {
@@ -73,33 +73,86 @@
   }
 }
 
+// Education Tab
 #tab-1 {
   ul ::marker {
     content: "👨‍🎓";
   }
 }
+
+// Work Tab
 #tab-2 {
-    ul ::marker {
-      content: "💼";
-    }
+  ul ::marker {
+    content: "💼";
+  }
 }
-// Skills Tab
 
+// Skills Tab
 #tab-3 {
-  .tab{
-  width: auto;
-  ul{
-    padding: 1rem 0px ;
-    display:grid;
-    grid-template-columns: 33.3%  33.3%  33.3%;
-    li{
-      padding: 0px;
-      margin: auto;
-      list-style: none;
+  .tab {
+    width: auto;
+    ul {
+      padding: 1rem 0px;
+      display: grid;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+      li {
+        padding: 0px;
+        margin: auto;
+        list-style: none;
+      }
     }
   }
-  }
+}
 
+#tab-4 {
+  .tab {
+    width: 100%;
+    .projects {
+      ::marker {
+        content: "📌";
+      }
+      .course {
+        margin: 0px;
+        .sub-title {
+          @include f-size(1.5rem, 600);
+          color: black;
+        }
+      }
+      .desc {
+        ::marker {
+          content: "🔸";
+        }
+        li {
+          padding: 0px;
+        }
+      }
+      a{
+        color: $secondary-color;
+        @include animate(zoomInOut, 4s, ease-in, infinite);
+        @include keyframes_zoomInOut();
+      }
+    }
+  }
+}
+// Interest Tab
+#tab-5 {
+  height: 85%;
+  .tab {
+    height: 100%;
+    ul {
+      padding: 0px;
+      height: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      overflow: auto;
+    }
+    li {
+      list-style: none;
+      width: max-content;
+      height: fit-content;
+      margin: auto;
+    }
+  }
 }
 
 // Mobile View
@@ -113,5 +166,10 @@
   }
   .section {
     width: 70%;
+  }
+  #tab-5 {
+    ul {
+      grid-template-columns: 50% 50% !important;
+    }
   }
 }
