@@ -190,9 +190,9 @@ const Tabs = ({ tabNo }) => {
                   {pro.subTitle}
                 </span>
               </p>
-              <ul className="desc">
+              {/* <ul className="desc">
               {pro.desc.map(point=> <li>{point}</li>)}
-              </ul>
+              </ul> */}
               <p className="date-per">
                 <span className="date"> {pro.time}</span>{" "}
                 <a href={pro.link} className="link"> View Now</a>
