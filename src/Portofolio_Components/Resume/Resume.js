@@ -233,9 +233,6 @@ const Tabs = ({ tabNo }) => {
 
 const Resume = () => {
   const [activeTab, setTab] = useState("tab-1");
-  useEffect(() => {
-    console.log("Changed", activeTab);
-  }, [activeTab]);
 
   return (
     <div className="resume-box container my-5">

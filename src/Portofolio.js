@@ -15,6 +15,8 @@ const Portofolio = () => {
       <Resume />
       <div style={{height:"20px"}} />
       <Projects />
+      <div style={{height:"20px"}} />
+      <Contact />
     </>
   );
 };
