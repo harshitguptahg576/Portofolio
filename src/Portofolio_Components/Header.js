@@ -12,7 +12,7 @@ const Header = () => {
             <NavLink to="/Portofolio">
               <div className="logo d-flex align-items-center">
                 <img
-                  src="Portofolio/Assets/Images/H Logo.png"
+                  src="Assets/Images/H Logo.png"
                   width={"50"}
                   alt="H-Coder"
                 />
