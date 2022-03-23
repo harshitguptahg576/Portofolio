@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+
 const Header = () => {
   const [showStyle, setShowStyle] = useState({ display: "none" });
   return (
@@ -8,10 +9,10 @@ const Header = () => {
       <nav>
         <div className="navbar">
           <div className="navbarcollapse d-flex justify-content-around">
-            <NavLink to="">
+            <NavLink to="/Portofolio">
               <div className="logo d-flex align-items-center">
                 <img
-                  src="Assets/Images/H Logo.png"
+                  src="Portofolio/Assets/Images/H Logo.png"
                   width={"50"}
                   alt="H-Coder"
                 />
