@@ -36,7 +36,7 @@ const Header = () => {
           <div className="menubar" style={showStyle}>
             <ul>
               <li className="menu">
-                <NavLink to="">Home</NavLink>
+                <NavLink to="/Portofolio">Home</NavLink>
               </li>
               <li className="menu">
                 <NavLink to="/about">AboutMe</NavLink>
