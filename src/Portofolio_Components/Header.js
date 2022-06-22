@@ -9,7 +9,7 @@ const Header = () => {
       <nav>
         <div className="navbar">
           <div className="navbarcollapse d-flex justify-content-around">
-            <NavLink to="/Portofolio">
+            <NavLink to="/Portofolio/">
               <div className="logo d-flex align-items-center">
                 <img
                   src="Assets/Images/H Logo.png"
@@ -37,7 +37,7 @@ const Header = () => {
           <div className="menubar" style={showStyle}>
             <ul>
               <li className="menu">
-                <NavLink to="/Portofolio">Home</NavLink>
+                <NavLink to="/Portofolio/">Home</NavLink>
               </li>
               <li className="menu">
                 <NavLink to="/about">AboutMe</NavLink>
