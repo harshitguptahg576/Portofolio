@@ -7,18 +7,18 @@
   justify-content: space-between;
   gap: 2em;
   margin: 5rem auto;
-  &::after{
+  &::after {
     position: absolute;
     content: "";
-    @include w_h(50px,2px);
-    @include bg_txt($secondary-color,black);
+    @include w_h(50px, 2px);
+    @include bg_txt($secondary-color, black);
     bottom: -2.5rem;
-    left: calc( 50% - 15px);
+    left: calc(50% - 15px);
   }
 }
 
-// 
-.project-box:nth-of-type(odd){
+//
+.project-box:nth-of-type(odd) {
   flex-direction: row-reverse;
 }
 
@@ -33,48 +33,46 @@
     font-size: 1rem;
     color: $secondary-color;
   }
-    .p-title{
-      @include f-size(2rem,600)
-    }
-    .p-sub-title{
-        color: $secondary-color;
-        @include f-size(1.5rem,700);
-    }
-    ul ::marker{
-        content: "🔸";
-        color: #ff8400;
-    }
-    li{
-        padding-left: 1rem;
-    }
-    
+  .p-title {
+    @include f-size(2rem, 600);
+  }
+  .p-sub-title {
+    color: $secondary-color;
+    @include f-size(1.5rem, 700);
+  }
+  ul ::marker {
+    content: "🔸";
+    color: #ff8400;
+  }
+  li {
+    padding-left: 1rem;
+  }
 }
 
 .project-pic {
   width: 40%;
-  .p-pic{
-    @include w_h(100%,100%);
+  .p-pic {
+    @include w_h(100%, 100%);
     @include center();
-  }
-  img{
-    width: 75%;
-    border-radius: 100%;
-    padding: 1.5rem;
-    border-bottom: 2px solid $secondary-color;
-    transition: padding 200ms ease-in;
-    &:hover{
-      padding: 0.5rem;
+    img {
+      border-radius: 100%;
+      padding: 1.5rem;
+      border-bottom: 2px solid $secondary-color;
+      transition: padding 200ms ease-in;
+      &:hover {
+        padding: 0.5rem;
+      }
     }
   }
 }
 
-.project-btn{
+.project-btn {
   position: absolute;
   width: 100%;
   bottom: -4.5rem;
   text-align: center;
-  a{
-    @include f-size(1.75rem,600);
+  a {
+    @include f-size(1.75rem, 600);
     color: black;
   }
 }
@@ -83,11 +81,12 @@
     flex-direction: column-reverse !important;
   }
 
-  .project-pic, .project-detail {
+  .project-pic,
+  .project-detail {
     width: 100%;
   }
-  .project-box{
-    img{
+  .project-box {
+    img {
       width: 50%;
     }
   }

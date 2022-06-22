@@ -31,19 +31,33 @@ const ContactForm = () => {
     
     if (validate()){
       
-    // // EmailJS:  Send Function()
-    // send("h-coder-service", "h-coder-template", contact,"sdUERAEqUsKywHcoT")
-    //   .then(() => {
-    //     console.log("SUCCESS!");
-    //   })
-    //   .catch(() => {
-    //     console.log("FAILED...");
-    //   });
+    // EmailJS:  Send Function()
+    send("h-coder-service", "h-coder-template", contact,"sdUERAEqUsKywHcoT")
+      .then(() => {
+        console.log("SUCCESS!");
+      })
+      .catch(() => {
+        console.log("FAILED...");
+      });
 
     success.current.classList.add("show")
+    setContact({
+      name: "",
+      email: "",
+      number: "",
+      subject: "",
+      message: "",
+    })
     }
     else
     error.current.classList.add("show")
+    setContact({
+      name: "",
+      email: "",
+      number: "",
+      subject: "",
+      message: "",
+    })
   };
   return (
     <>

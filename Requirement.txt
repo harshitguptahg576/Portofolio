@@ -1,0 +1,2 @@
+npm install yarn
+yarn add bootstrap axios sass emailjs gh-pages google-map-react react-typical styled-components 

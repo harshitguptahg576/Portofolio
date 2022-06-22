@@ -31,11 +31,11 @@ const Aboutme = () => {
               <li>
                 I have good command in{" "}
                 <span className="bio-highlights">
-                  Python, JavaScript, ML, Django, React{" "}
+                  Python, JavaScript, ML, Django, React, NodeJs{" "}
                 </span>{" "}
                 along with the knowledge of{" "}
                 <span className="bio-highlights">
-                  HTML, CSS, C#, Java, .NET, Pandas, Selenium
+                  HTML, CSS, Pandas, Selenium, Redux, MongoDB, C#, Java, .NET
                 </span>{" "}
                 and Many More...
               </li>

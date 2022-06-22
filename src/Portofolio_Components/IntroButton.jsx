@@ -1,10 +1,13 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const IntroButton = () => {
   return (
     <div className="intro-btn">
-      <button className="hire-btn m-2">Hire Me</button>
-      <a href="Assets/Harshit-Resume.pdf" download>
+      <NavLink to="/contact">
+        <button className="hire-btn m-2">Hire Me</button>
+      </NavLink>
+      <a href="Assets/Harshit Gupta.pdf" download>
         <button className="resume-btn m-2">My Resume</button>
       </a>
     </div>
