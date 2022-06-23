@@ -1,6 +1,11 @@
 @import "../../SASS/mixins";
 @import "../../SASS/variables";
 
+
+.about-me{
+  min-height: 73.1vh;
+}
+
 .about-box {
   display: flex;
   text-align: center;
