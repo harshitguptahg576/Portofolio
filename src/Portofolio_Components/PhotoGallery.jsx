@@ -19,7 +19,7 @@ const PhotoGallery = () => {
   var numList=[1,2,3,4,5,6,7,8,9,10,11,12,13,14]
   imagesBox.forEach((image,i)=>{
     const imgIndex=Math.floor(Math.random()*(numList.length))
-    image.style.backgroundImage=`url('Assets/GalleryImg/${numList[imgIndex]}.jpg')`
+    image.style.backgroundImage=`url('/Portofolio/Assets/GalleryImg/${numList[imgIndex]}.jpg')`
     numList.splice(imgIndex,1)
   })
 

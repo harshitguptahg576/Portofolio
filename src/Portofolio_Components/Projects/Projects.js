@@ -14,7 +14,7 @@ const Project = () => {
         "It provides the details state-wise as well as district-wise with the help of official API data. It also provides tabular, graphical, and map visualisation of Covid data.",
         "It is also an E-Commerce platform related to the essential things for covid-19.",
       ],
-      imgUrl:"Assets/ProjectImg/covidWarrior.jpg",
+      imgUrl:"/Portofolio/Assets/ProjectImg/covidWarrior.jpg",
       link: "http://harshitguptahg576.pythonanywhere.com",
     },
     {
@@ -26,7 +26,7 @@ const Project = () => {
         "The main objective of this project is to make a personal assistant for the user. It's work is to recognise our voice and convert it into query to perform some specific tasks.",
         "It can open Wikipedia, browsers, applications, songs, videos, and sending mails with the help of voice only.",
       ],
-      imgUrl: "Assets/ProjectImg/desktopAssistant.jpg",
+      imgUrl: "/Portofolio/Assets/ProjectImg/desktopAssistant.jpg",
       link: "#",
     },
     {
@@ -37,7 +37,7 @@ const Project = () => {
         "A window application which provides the users to login & register. It provides various applications like Notepad, Student Management App.",
         "In Student Management System, Authorised user can perform CRUD operations for Student and Faculties.",
       ],
-      imgUrl: "Assets/ProjectImg/studentManagement.jpg",
+      imgUrl: "/Portofolio/Assets/ProjectImg/studentManagement.jpg",
       link: "#",
     },
     {
@@ -48,7 +48,7 @@ const Project = () => {
       desc: [
         "The main objective of this project is to predict the price of the house by using boston dataset and linear Regression model of Sklearn library on the basis of various factors affecting the price of house.",
       ],
-      imgUrl: "Assets/ProjectImg/housePrice.jpg",
+      imgUrl: "/Portofolio/Assets/ProjectImg/housePrice.jpg",
       link: "#",
     },
     {
@@ -59,7 +59,7 @@ const Project = () => {
       desc: [
         "The main objective of this project is to classify the target variables of iris dataset with the help of Logistic Regression of sklearn library on the basis of sepal/petal length and width.",
       ],
-      imgUrl: "Assets/ProjectImg/predictionIris.jpg",
+      imgUrl: "/Portofolio/Assets/ProjectImg/predictionIris.jpg",
       link: "#",
     },
     {
@@ -69,7 +69,7 @@ const Project = () => {
       desc: [
         "The main objective of this project is to provide the automation of my website Covid-Warrior. It firstly opens it and displays all the features of this website by the back-end or automatically with the help of Selenium.",
       ],
-      imgUrl: "Assets/ProjectImg/automationSelenium.jpg",
+      imgUrl: "/Portofolio/Assets/ProjectImg/automationSelenium.jpg",
       link: "#",
     },
   ];

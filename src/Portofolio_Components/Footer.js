@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <footer>
       <div className='footer text-white text-center'>
-           &copy; Copyright 2022 &nbsp;&nbsp;|&nbsp;&nbsp; <img src="Assets/Images/H-Coder white.png" width={"200"} alt='H-Coder' />
+           &copy; Copyright 2022 &nbsp;&nbsp;|&nbsp;&nbsp; <img src="/Portofolio/Assets/Images/H-Coder white.png" width={"200"} alt='H-Coder' />
           </div>
       </footer>
     </>

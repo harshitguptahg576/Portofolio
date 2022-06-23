@@ -7,7 +7,7 @@ const IntroButton = () => {
       <NavLink to="/contact">
         <button className="hire-btn m-2">Hire Me</button>
       </NavLink>
-      <a href="Assets/Harshit Gupta.pdf" download>
+      <a href="/Portofolio/Assets/Harshit Gupta.pdf" download>
         <button className="resume-btn m-2">My Resume</button>
       </a>
     </div>

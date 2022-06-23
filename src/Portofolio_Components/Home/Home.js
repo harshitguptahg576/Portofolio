@@ -49,7 +49,7 @@ const Home = () => {
 
         <div className="profile-pic">
           <div className="pic">
-            <img src="Assets/Images/pic.jpg" alt="Profile Pic" width="100%" />
+            <img src="/Portofolio/Assets/Images/pic.jpg" alt="Profile Pic" width="100%" />
           </div>
         </div>
       </div>
