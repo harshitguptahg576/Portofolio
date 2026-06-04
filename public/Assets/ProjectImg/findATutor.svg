@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Find-a-Tutor platform">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <rect x="95" y="130" width="120" height="95" rx="10" fill="#bbf7d0"/>
+  <rect x="110" y="145" width="90" height="10" fill="#166534"/>
+  <rect x="110" y="165" width="70" height="8" fill="#4ade80"/>
+  <rect x="110" y="182" width="80" height="8" fill="#4ade80"/>
+  <path d="M215 120l55 30v70l-55 30-55-30v-70z" fill="#86efac"/>
+  <circle cx="215" cy="175" r="22" fill="#166534"/>
+  <rect x="200" y="188" width="30" height="26" rx="8" fill="#bbf7d0"/>
+  <circle cx="290" cy="250" r="34" fill="#facc15"/>
+  <text x="290" y="258" text-anchor="middle" fill="#14532d" font-family="Arial,sans-serif" font-size="28" font-weight="700">?</text>
+  <text x="200" y="330" text-anchor="middle" fill="#ecfdf5" font-family="Arial,sans-serif" font-size="28" font-weight="700">Find-a-Tutor</text>
+  <text x="200" y="360" text-anchor="middle" fill="#bbf7d0" font-family="Arial,sans-serif" font-size="18">Online Tutoring</text>
+</svg>

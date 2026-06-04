@@ -116,11 +116,15 @@ export const interests = [
 
 export const languages = ["English", "Hindi"];
 
+const projectImg = (filename) => `/Portofolio/Assets/ProjectImg/${filename}`;
+
 export const projects = [
   {
     title: '"PR AUTOMATION" - AI-POWERED PR CONSULTANT',
     subTitle: "TECHNOLOGIES: NEXT.JS, DJANGO, PYTHON, JAVASCRIPT, POSTGRES",
     time: "JAN 2025 - PRESENT",
+    imgUrl: projectImg("prAutomation.svg"),
+    imageAlt: "PR Automation AI-powered PR consultant platform",
     desc: [
       "Led frontend development and collaborated with a junior backend developer to deliver an AI-powered PR automation platform.",
       "Built intelligent content recommendation features leveraging AI-driven storytelling, media outreach suggestions, and PR strategy guidance.",
@@ -134,6 +138,8 @@ export const projects = [
     subTitle:
       "TECHNOLOGIES: NODE.JS, REACT, REDUX, MYSQL, MONGODB, JAVASCRIPT, DOCKER",
     time: "JAN 2023 - DEC 2025",
+    imgUrl: projectImg("nobelPage.svg"),
+    imageAlt: "NobelPage job portal application",
     desc: [
       "Developed and led the project as a technical lead, driving full-cycle development across backend and frontend architectures.",
       "Managed client expectations and ensured alignment with project goals and timelines.",
@@ -146,6 +152,8 @@ export const projects = [
     title: '"AI LIKENESS" - IDENTITY VAULT – DID PLATFORM',
     subTitle: "TECHNOLOGIES: NEXT.JS, NODE.JS, JAVASCRIPT, POSTGRESQL",
     time: "MAR 2026 - PRESENT",
+    imgUrl: projectImg("aiLikeness.svg"),
+    imageAlt: "AI Likeness identity vault and DID platform",
     desc: [
       "Led frontend architecture and development for a decentralized identity management platform utilizing DID technology.",
       "Implemented secure identity verification workflows, including KYC validation, live face recognition, voice authentication, and text verification.",
@@ -159,6 +167,8 @@ export const projects = [
     subTitle:
       "TECHNOLOGIES: NODE JS, REACT, HTML, CSS, REDUX, MONGODB, JAVASCRIPT",
     time: "MAY 2022 - DEC 2022",
+    imgUrl: projectImg("liveStage.svg"),
+    imageAlt: "LiveStage live streaming and ticketing platform",
     desc: [
       "Led development of a live streaming and ticketing platform for web, mobile (Android/iOS), and TV.",
       "Managed entire backend and web frontend development, ensuring seamless user experiences.",
@@ -171,6 +181,8 @@ export const projects = [
     subTitle:
       "TECHNOLOGIES: NEXT.JS, NEST.JS, JAVASCRIPT, POSTGRESQL, TYPESCRIPT",
     time: "DEC 2025 - FEB 2026",
+    imgUrl: projectImg("findATutor.svg"),
+    imageAlt: "Find-a-Tutor online tutoring platform",
     desc: [
       "Led frontend and backend architecture and development for an online tutoring platform.",
       "Implemented secure tutoring workflows, including tutor verification, live video tutoring, and payment integration.",
@@ -183,6 +195,8 @@ export const projects = [
     title: '"EV REMARKETING" - EV PHOTO INSPECTION',
     subTitle: "TECHNOLOGIES: NEXT, NEST, REDUX, POSTGRES, TYPESCRIPT, DOCKER",
     time: "SEPT 2025 - OCT 2025",
+    imgUrl: projectImg("evRemarketing.svg"),
+    imageAlt: "EV Remarketing electric vehicle photo inspection",
     desc: [
       "Developed the Photo Inspection module for image capture and automated damage detection in EVs.",
       "Built and integrated secure APIs using NestJS and PostgreSQL, ensuring reliable data flow and performance.",
@@ -200,7 +214,8 @@ export const projects = [
       "It provides the details state-wise as well as district-wise with the help of official API data. It also provides tabular, graphical, and map visualisation of Covid data.",
       "It is also an E-Commerce platform related to the essential things for covid-19.",
     ],
-    imgUrl: "/Portofolio/Assets/ProjectImg/covidWarrior.jpg",
+    imgUrl: projectImg("covidWarrior.jpg"),
+    imageAlt: "COVID-Warrior live tracking and e-commerce website",
     link: "http://harshitguptahg576.pythonanywhere.com",
   },
   {
@@ -212,7 +227,8 @@ export const projects = [
       "The main objective of this project is to make a personal assistant for the user. It's work is to recognise our voice and convert it into query to perform some specific tasks.",
       "It can open Wikipedia, browsers, applications, songs, videos, and sending mails with the help of voice only.",
     ],
-    imgUrl: "/Portofolio/Assets/ProjectImg/desktopAssistant.jpg",
+    imgUrl: projectImg("desktopAssistant.jpg"),
+    imageAlt: "Jarvis desktop voice assistant built with Python",
     link: "#",
   },
   {
@@ -223,7 +239,8 @@ export const projects = [
       "A window application which provides the users to login & register. It provides various applications like Notepad, Student Management App.",
       "In Student Management System, Authorised user can perform CRUD operations for Student and Faculties.",
     ],
-    imgUrl: "/Portofolio/Assets/ProjectImg/studentManagement.jpg",
+    imgUrl: projectImg("studentManagement.jpg"),
+    imageAlt: "Student Management System .NET desktop application",
     link: "#",
   },
   {
@@ -234,7 +251,8 @@ export const projects = [
     desc: [
       "The main objective of this project is to predict the price of the house by using boston dataset and linear Regression model of Sklearn library on the basis of various factors affecting the price of house.",
     ],
-    imgUrl: "/Portofolio/Assets/ProjectImg/housePrice.jpg",
+    imgUrl: projectImg("housePrice.jpg"),
+    imageAlt: "House price prediction machine learning project",
     link: "#",
   },
   {
@@ -245,7 +263,8 @@ export const projects = [
     desc: [
       "The main objective of this project is to classify the target variables of iris dataset with the help of Logistic Regression of sklearn library on the basis of sepal/petal length and width.",
     ],
-    imgUrl: "/Portofolio/Assets/ProjectImg/predictionIris.jpg",
+    imgUrl: projectImg("predictionIris.jpg"),
+    imageAlt: "Iris dataset classification machine learning project",
     link: "#",
   },
   {
@@ -255,7 +274,8 @@ export const projects = [
     desc: [
       "The main objective of this project is to provide the automation of my website Covid-Warrior. It firstly opens it and displays all the features of this website by the back-end or automatically with the help of Selenium.",
     ],
-    imgUrl: "/Portofolio/Assets/ProjectImg/automationSelenium.jpg",
+    imgUrl: projectImg("automationSelenium.jpg"),
+    imageAlt: "Automated website testing with Python Selenium",
     link: "#",
   },
 ];

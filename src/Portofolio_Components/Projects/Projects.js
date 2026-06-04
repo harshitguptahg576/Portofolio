@@ -33,10 +33,11 @@ const Project = () => {
                   rel={pro.link !== "#" ? "noopener noreferrer" : undefined}
                 >
                   <img
-                    src={pro.imgUrl ? pro.imgUrl : "//unsplash.it/300/300"}
-                    alt="project-pic"
-                    width={"300px"}
-                    height={"300px"}
+                    src={pro.imgUrl}
+                    alt={pro.imageAlt || pro.title}
+                    className="project-image"
+                    width={300}
+                    height={300}
                   />
                 </a>
               </div>
