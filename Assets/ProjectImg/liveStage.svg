@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="LiveStage streaming platform">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#450a0a"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <rect x="80" y="110" width="240" height="150" rx="16" fill="#1f2937"/>
+  <polygon points="185,160 185,210 235,185" fill="#fca5a5"/>
+  <circle cx="300" cy="130" r="22" fill="#ef4444"/>
+  <text x="300" y="137" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="700">LIVE</text>
+  <rect x="110" y="285" width="55" height="28" rx="8" fill="#fecaca"/>
+  <rect x="175" y="285" width="55" height="28" rx="8" fill="#fecaca"/>
+  <rect x="240" y="285" width="55" height="28" rx="8" fill="#fecaca"/>
+  <text x="200" y="350" text-anchor="middle" fill="#fff1f2" font-family="Arial,sans-serif" font-size="30" font-weight="700">LiveStage</text>
+  <text x="200" y="378" text-anchor="middle" fill="#fecaca" font-family="Arial,sans-serif" font-size="18">Streaming</text>
+</svg>

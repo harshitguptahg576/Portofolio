@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AI Likeness identity platform">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042f2e"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <path d="M200 85l95 55v110l-95 55-95-55V140z" fill="none" stroke="#5eead4" stroke-width="10"/>
+  <circle cx="200" cy="175" r="52" fill="#134e4a"/>
+  <circle cx="200" cy="165" r="34" fill="#99f6e4"/>
+  <rect x="168" y="205" width="64" height="48" rx="20" fill="#5eead4"/>
+  <path d="M155 130h90" stroke="#2dd4bf" stroke-width="6" stroke-linecap="round"/>
+  <path d="M130 250h140" stroke="#14b8a6" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="285" cy="120" r="18" fill="#fbbf24"/>
+  <text x="200" y="330" text-anchor="middle" fill="#ccfbf1" font-family="Arial,sans-serif" font-size="30" font-weight="700">AI Likeness</text>
+  <text x="200" y="360" text-anchor="middle" fill="#99f6e4" font-family="Arial,sans-serif" font-size="18">Identity Vault</text>
+</svg>

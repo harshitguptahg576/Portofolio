@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="PR Automation project">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="200" cy="165" r="72" fill="#a78bfa" opacity="0.25"/>
+  <path d="M145 250h110l-18 42H163l-18-42z" fill="#c4b5fd"/>
+  <path d="M170 210h60v40h-60z" fill="#ede9fe"/>
+  <path d="M188 120h24v70h-24z" fill="#f5f3ff"/>
+  <circle cx="200" cy="108" r="28" fill="#ddd6fe"/>
+  <path d="M120 180c20-36 60-56 80-56s60 20 80 56" fill="none" stroke="#fbbf24" stroke-width="8" stroke-linecap="round"/>
+  <text x="200" y="330" text-anchor="middle" fill="#ede9fe" font-family="Arial,sans-serif" font-size="28" font-weight="700">PR Automation</text>
+  <text x="200" y="360" text-anchor="middle" fill="#c4b5fd" font-family="Arial,sans-serif" font-size="18">AI PR Consultant</text>
+</svg>
