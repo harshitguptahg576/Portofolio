@@ -26,7 +26,7 @@ const Contactme = () => {
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com/in/harshitofficial" target="_blank">
+            <a href="https://www.linkedin.com/in/harshitofficial/" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-linkedin"></i>
             </a>
           </li>

@@ -11,8 +11,8 @@ const Map = () => {
 
   const location = {
     center: {
-      lat: 28.452825,
-      lng: 77.0698,
+      lat: 27.5961,
+      lng: 78.052,
     },
     zoom: 13,
   };

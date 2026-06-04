@@ -91,6 +91,18 @@
   ul ::marker {
     content: "💼";
   }
+  .work-highlights {
+    padding-left: 2rem;
+    margin-top: 0.5rem;
+    ::marker {
+      content: "🔸";
+    }
+    li {
+      padding: 0.25rem 0;
+      @include f-size(1.25rem, 500);
+      color: black;
+    }
+  }
 }
 
 // Skills Tab
@@ -140,8 +152,15 @@
     }
   }
 }
-// Interest Tab
+// Achievements Tab
 #tab-5 {
+  ul ::marker {
+    content: "🏆";
+  }
+}
+
+// Interest Tab
+#tab-6 {
   height: 85%;
   .tab {
     height: 100%;
@@ -173,7 +192,7 @@
   .section {
     width: 70%;
   }
-  #tab-5 {
+  #tab-6 {
     ul {
       grid-template-columns: 50% 50% !important;
     }

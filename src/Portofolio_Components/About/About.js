@@ -3,6 +3,7 @@ import Title from "../Title";
 import "./About.scss";
 import PhotoGallery from "../PhotoGallery";
 import IntroButton from "../IntroButton";
+import { profile, technicalSkills } from "../../data/portfolioData";
 
 const Aboutme = () => {
   return (
@@ -13,37 +14,41 @@ const Aboutme = () => {
         <PhotoGallery />
         <div className="bio">
           <div className="">
-            <p className="bio-short">@H-Coder</p>
+            <p className="bio-short">{profile.handle}</p>
             <h1 className="bio-title">
-              Full Stack Developer | Python Developer
+              {profile.title} | {profile.subtitle}
             </h1>
-            <p className="bio-desc my-3">
-              I am Harshit Gupta from India. I have done my Master's Degre in
-              the discipline of Computer Applications and Engineering in GLA
-              University with an aggregate of 90%.
-            </p>
+            <p className="bio-desc my-3">{profile.summary}</p>
           </div>
           <div className="highlights">
-            <p className="h-title my-4">
-              HighLights 🔽
-            </p>
+            <p className="h-title my-4">HighLights 🔽</p>
             <ul>
               <li>
-                I have good command in{" "}
-                <span className="bio-highlights">
-                  Python, JavaScript, ML, Django, React, NodeJs{" "}
-                </span>{" "}
-                along with the knowledge of{" "}
-                <span className="bio-highlights">
-                  HTML, CSS, Pandas, Selenium, Redux, MongoDB, C#, Java, .NET
-                </span>{" "}
-                and Many More...
+                <span className="bio-highlights">Programming:</span>{" "}
+                {technicalSkills.languages}
               </li>
-              <li>My hobbies are Singing, Programming, Writing, Travelling.</li>
               <li>
-                {" "}
-                My strength is positive attitude, Dedication and self
-                confidence.{" "}
+                <span className="bio-highlights">Web:</span>{" "}
+                {technicalSkills.web}
+              </li>
+              <li>
+                <span className="bio-highlights">Mobile:</span>{" "}
+                {technicalSkills.mobile}
+              </li>
+              <li>
+                <span className="bio-highlights">Databases:</span>{" "}
+                {technicalSkills.databases}
+              </li>
+              <li>
+                <span className="bio-highlights">Tools:</span>{" "}
+                {technicalSkills.tools}
+              </li>
+              <li>
+                My hobbies are Singing, Programming, Writing, and Travelling.
+              </li>
+              <li>
+                My strength is positive attitude, dedication, and self
+                confidence.
               </li>
               <li>
                 My weakness is I never feel comfortable until I finish off my
